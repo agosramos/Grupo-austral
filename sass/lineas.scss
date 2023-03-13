@@ -97,7 +97,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 
 .main_card_contain {
 	display: grid;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 	grid-template-columns: repeat(3, 5fr);
 	justify-content: space-evenly;
 	align-items:center;
