@@ -83,17 +83,11 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 
   /*MAIN*/
 
-  .h1_lineas {
+  .h1, h2, h3 {
 	font-family: $font-family_3;
 	font-size: 30px;
-	align-items:start;
-	margin-top: 1%;
+	align-items:start;	
   }
-.h1_ventanas {
-	font-family: $font-family_3;
-	font-size: 30px;
-	align-items: start;
-}
 
 .main_card_contain {
 	display: grid;
@@ -105,16 +99,17 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	grid-row-gap: 100px;
 	grid-template-areas:
 	"h1 h1 h1"
-	"card card card"
+	"card_herrero card_modena card_a30"
 	"h2 h2 h2"
-	"card card card"
-	"card card card"
-	"card card card"
+	"card_abrir card_corrediza card_oscilo"
+	"card_proyectante card_brazo card_fijo"
+	"card_balcon card_banderola card_mosquitero"
 	"h3 h3 h3"
-	"card card card";
+	"card_ciega card_vidrio card_postigo";
 	}
 	
-	.card {
+	.card_herrero, .card_modena, .card_a30, .card_abrir, .card_corrediza, .card_oscilo, .card_proyectante 
+	.card_brazo, .card_fijo, .card_balcon, .card_banderola, .card_mosquitero, .card_ciega, .card_vidrio, .card_postigo {
 	/*position: relative;*/
 	width: 260px;
 	height: 260px;
@@ -132,7 +127,6 @@ $font-family_3: 'Roboto Condensed', sans-serif;
     }
   }
 }
-	
 	.img_herrero {
 	display: flex;
 	width: 280px;

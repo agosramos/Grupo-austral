@@ -72,14 +72,7 @@
 
 /*CONTENIDO PRINCIPAL*/
 /*MAIN*/
-.h1_lineas {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 30px;
-  align-items: start;
-  margin-top: 1%;
-}
-
-.h1_ventanas {
+.h1, h2, h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 30px;
   align-items: start;
@@ -93,10 +86,11 @@
   align-items: center;
   grid-column-gap: 50px;
   grid-row-gap: 100px;
-  grid-template-areas: "h1 h1 h1" "card card card" "h2 h2 h2" "card card card" "card card card" "card card card" "h3 h3 h3" "card card card";
+  grid-template-areas: "h1 h1 h1" "card_herrero card_modena card_a30" "h2 h2 h2" "card_abrir card_corrediza card_oscilo" "card_proyectante card_brazo card_fijo" "card_balcon card_banderola card_mosquitero" "h3 h3 h3" "card_ciega card_vidrio card_postigo";
 }
 
-.card {
+.card_herrero, .card_modena, .card_a30, .card_abrir, .card_corrediza, .card_oscilo, .card_proyectante .card_brazo,
+.card_fijo, .card_balcon, .card_banderola, .card_mosquitero, .card_ciega, .card_vidrio, .card_postigo {
   /*position: relative;*/
   width: 260px;
   height: 260px;
@@ -105,10 +99,12 @@
   overflow: hidden;
   border-radius: 30px;
 }
-.card:hover .card_content {
+.card_herrero:hover .card_content, .card_modena:hover .card_content, .card_a30:hover .card_content, .card_abrir:hover .card_content, .card_corrediza:hover .card_content, .card_oscilo:hover .card_content, .card_proyectante .card_brazo:hover .card_content,
+.card_fijo:hover .card_content, .card_balcon:hover .card_content, .card_banderola:hover .card_content, .card_mosquitero:hover .card_content, .card_ciega:hover .card_content, .card_vidrio:hover .card_content, .card_postigo:hover .card_content {
   transform: translateY(0);
 }
-.card:hover .card_description {
+.card_herrero:hover .card_description, .card_modena:hover .card_description, .card_a30:hover .card_description, .card_abrir:hover .card_description, .card_corrediza:hover .card_description, .card_oscilo:hover .card_description, .card_proyectante .card_brazo:hover .card_description,
+.card_fijo:hover .card_description, .card_balcon:hover .card_description, .card_banderola:hover .card_description, .card_mosquitero:hover .card_description, .card_ciega:hover .card_description, .card_vidrio:hover .card_description, .card_postigo:hover .card_description {
   opacity: 1;
   transition-delay: 0.2s;
 }
