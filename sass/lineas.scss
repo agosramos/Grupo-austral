@@ -85,7 +85,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 
   .h1, h2, h3 {
 	font-family: $font-family_3;
-	font-size: 30px;
+	font-size: 40px;
 	align-items:start;	
   }
 
@@ -97,6 +97,8 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	align-items:center;
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
+	grid-gap: .5rem;
+	margin: .5rem 0;
 }
 .h1 {
 	grid-area: h1;
@@ -717,6 +719,38 @@ footer {
 	opacity: 1;
 	transform: translateY(0);
   }
+
+/*main cards*/
+@media screen and (max-width: 768px) {
+.main_card_contain {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(14, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 2px;
+    grid-template-areas:
+	"h1"
+	"card"
+	"card1"
+	"card2"
+	
+	"h2"
+	"card3"
+	"card4"
+	"card5"
+	"card6"
+	"card7"
+	"card8"
+	"card9"
+	"card10"
+	"card11"
+	
+	"h3"
+	"card12"
+	"card13"
+	"card14"
+}
+}
 
 /*footer*/
 
