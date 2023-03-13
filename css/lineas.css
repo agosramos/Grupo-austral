@@ -85,13 +85,87 @@
   justify-content: space-evenly;
   align-items: center;
   grid-column-gap: 50px;
-  grid-row-gap: 100px;
-  grid-template-areas: "h1 h1 h1" "card_herrero card_modena card_a30" "h2 h2 h2" "card_abrir card_corrediza card_oscilo" "card_proyectante card_brazo card_fijo" "card_balcon card_banderola card_mosquitero" "h3 h3 h3" "card_ciega card_vidrio card_postigo";
+  grid-row-gap: 50px;
 }
 
-.card_herrero, .card_modena, .card_a30, .card_abrir, .card_corrediza, .card_oscilo, .card_proyectante .card_brazo,
-.card_fijo, .card_balcon, .card_banderola, .card_mosquitero, .card_ciega, .card_vidrio, .card_postigo {
-  /*position: relative;*/
+.h1 {
+  grid-area: h1;
+}
+
+.h2 {
+  grid-area: h2;
+}
+
+.h2 {
+  grid-area: h2;
+}
+
+.card {
+  grid-area: card;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+.card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  grid-area: card8;
+}
+
+.card9 {
+  grid-area: card9;
+}
+
+.card10 {
+  grid-area: card10;
+}
+
+.card11 {
+  grid-area: card11;
+}
+
+.card12 {
+  grid-area: card12;
+}
+
+.card13 {
+  grid-area: card13;
+}
+
+.card14 {
+  grid-area: card14;
+}
+
+.main_card_contain {
+  grid-template-areas: "h1 h1 h1" "card card1 card2" "h2 h2 h2" "card3 card4 card5" "card6 card7 card8" "card9 card10 card11" "h3 h3 h3" "card12 card13 card14";
+}
+
+.card {
+  position: relative;
   width: 260px;
   height: 260px;
   color: rgb(0, 0, 0);
@@ -99,12 +173,248 @@
   overflow: hidden;
   border-radius: 30px;
 }
-.card_herrero:hover .card_content, .card_modena:hover .card_content, .card_a30:hover .card_content, .card_abrir:hover .card_content, .card_corrediza:hover .card_content, .card_oscilo:hover .card_content, .card_proyectante .card_brazo:hover .card_content,
-.card_fijo:hover .card_content, .card_balcon:hover .card_content, .card_banderola:hover .card_content, .card_mosquitero:hover .card_content, .card_ciega:hover .card_content, .card_vidrio:hover .card_content, .card_postigo:hover .card_content {
+.card:hover .card_content {
   transform: translateY(0);
 }
-.card_herrero:hover .card_description, .card_modena:hover .card_description, .card_a30:hover .card_description, .card_abrir:hover .card_description, .card_corrediza:hover .card_description, .card_oscilo:hover .card_description, .card_proyectante .card_brazo:hover .card_description,
-.card_fijo:hover .card_description, .card_balcon:hover .card_description, .card_banderola:hover .card_description, .card_mosquitero:hover .card_description, .card_ciega:hover .card_description, .card_vidrio:hover .card_description, .card_postigo:hover .card_description {
+.card:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card1 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card1:hover .card_content {
+  transform: translateY(0);
+}
+.card1:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card2 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card2:hover .card_content {
+  transform: translateY(0);
+}
+.card2:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card3 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card3:hover .card_content {
+  transform: translateY(0);
+}
+.card3:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card4 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card4:hover .card_content {
+  transform: translateY(0);
+}
+.card4:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card5 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card5:hover .card_content {
+  transform: translateY(0);
+}
+.card5:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card6 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card6:hover .card_content {
+  transform: translateY(0);
+}
+.card6:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card7 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card7:hover .card_content {
+  transform: translateY(0);
+}
+.card7:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card8 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card8:hover .card_content {
+  transform: translateY(0);
+}
+.card8:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card9 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card9:hover .card_content {
+  transform: translateY(0);
+}
+.card9:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card10 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card10:hover .card_content {
+  transform: translateY(0);
+}
+.card10:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card11 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card11:hover .card_content {
+  transform: translateY(0);
+}
+.card11:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card12 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card12:hover .card_content {
+  transform: translateY(0);
+}
+.card12:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card13 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card13:hover .card_content {
+  transform: translateY(0);
+}
+.card13:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card14 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card14:hover .card_content {
+  transform: translateY(0);
+}
+.card14:hover .card_description {
   opacity: 1;
   transition-delay: 0.2s;
 }

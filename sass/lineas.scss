@@ -96,21 +96,329 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	justify-content: space-evenly;
 	align-items:center;
 	grid-column-gap: 50px;
-	grid-row-gap: 100px;
-	grid-template-areas:
-	"h1 h1 h1"
-	"card_herrero card_modena card_a30"
+	grid-row-gap: 50px;
+}
+.h1 {
+	grid-area: h1;
+  }
+  .h2 {
+	grid-area: h2;
+  }
+  .h2 {
+	grid-area: h2;
+  }
+
+.card {
+	grid-area: card;
+  }
+  .card1 {
+	grid-area: card1;
+  }
+  .card2 {
+	grid-area: card2;
+  }
+  .card3 {
+	grid-area: card3;
+  }
+  .card4 {
+	grid-area: card4;
+  }
+  .card5 {
+	grid-area: card5;
+  }
+  .card6 {
+	grid-area: card6;
+  }
+  .card7 {
+	grid-area: card7;
+  }
+  .card8 {
+	grid-area: card8;
+  }
+  .card9 {
+	grid-area: card9;
+  }
+  .card10 {
+	grid-area: card10;
+  }
+  .card11 {
+	grid-area: card11;
+  }
+  .card12 {
+	grid-area: card12;
+  }
+  .card13 {
+	grid-area: card13;
+  }
+  .card14 {
+	grid-area: card14;
+  }
+
+.main_card_contain {
+	grid-template-areas: "h1 h1 h1"
+	"card card1 card2"
 	"h2 h2 h2"
-	"card_abrir card_corrediza card_oscilo"
-	"card_proyectante card_brazo card_fijo"
-	"card_balcon card_banderola card_mosquitero"
+	"card3 card4 card5"
+	"card6 card7 card8"
+	"card9 card10 card11"
 	"h3 h3 h3"
-	"card_ciega card_vidrio card_postigo";
+	"card12 card13 card14";
+  }
+
+	.card {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
 	}
-	
-	.card_herrero, .card_modena, .card_a30, .card_abrir, .card_corrediza, .card_oscilo, .card_proyectante 
-	.card_brazo, .card_fijo, .card_balcon, .card_banderola, .card_mosquitero, .card_ciega, .card_vidrio, .card_postigo {
-	/*position: relative;*/
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card1 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card2 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card3 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card4 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card5 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card6 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card7 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card8 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card9 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card10 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card11 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card12 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card13 {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	color: $color_1;
+	background: $color_1;
+	overflow: hidden;
+	border-radius: 30px;
+	&:hover {
+		.card_content {
+	transform: translateY(0);
+	}
+	.card_description {
+	opacity: 1;
+	transition-delay: .20s;
+    }
+  }
+}
+.card14 {
+	position: relative;
 	width: 260px;
 	height: 260px;
 	color: $color_1;
