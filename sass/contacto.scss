@@ -1,8 +1,10 @@
 $color_1: rgb(0, 0, 0);
 $color_2: rgb(252, 248, 41);
 $color_3: rgba(238, 238, 238, 1.0);
+$color_4: rgb(71, 71, 71);
 $font-family_1: 'Stick No Bills', sans-serif;
 $font-family_2: 'Roboto', sans-serif;
+$font-family_3: 'Roboto Condensed', sans-serif;
 
   /*BARRA NAVEGACION*/
   .navbar {
@@ -72,6 +74,105 @@ $font-family_2: 'Roboto', sans-serif;
 	color: $color_2;
   }
 
+  /*MAIN*/
+
+  .contact-form {
+	background-color: $color_1;
+	padding: 20px;
+	border-radius: 10px;
+	width: 50%;
+	align-items: center;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 8%;
+	margin-bottom: 8%;
+	label {
+		color: $color_3;
+		margin-bottom: 10px;
+		font-family: $font-family_2;
+	}
+	.heading {
+		font-size: 40px;
+		font-family: $font-family_3;
+		color: $color_3;
+		margin-bottom: 12px;
+		font-weight: bold;
+		display: block;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+	input {
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 5px $color_2;
+			transform: scale(1.05);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+	textarea {
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 5px $color_2;
+			transform: scale(1.05);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+	button[type="submit"] {
+		background-color: $color_2;
+		color: $color_1;
+		font-family: $font-family_3;
+		border: none;
+		border-radius: 5px;
+		padding: 10px 20px;
+		font-size: 18px;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.1);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+}
+textarea {
+	resize: none;
+	height: 90px;
+	width: 510px;
+}
+
+.mapa {
+	font-family: $font-family_3;
+	font-size: 40px;
+	color: $color_1;
+	text-align: center;
+	animation: animacion 1s ease 0s 1 normal forwards;
+}
+
+@keyframes animacion {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.mapa {
+	iframe {
+		box-shadow: -2px 3px 6px 1px #000
+	}
+}
+
+
       /*FOOTER*/
   
 	.footer-clean {
@@ -110,8 +211,6 @@ $font-family_2: 'Roboto', sans-serif;
 				line-height: 50px;
 				display: inline-block;
 				text-align: center;
-				border-radius: 60%;
-				border: 1px solid #ccc;
 				margin-left: 50px;
 				margin-top: 80px;
 				color: $color_3;
@@ -131,7 +230,6 @@ $font-family_2: 'Roboto', sans-serif;
 			  align-items: center;
 			  width: 38px;
 			  height: 38px;
-			  object-fit:contain;
 		  }
 	  }
 	}
@@ -246,8 +344,6 @@ $font-family_2: 'Roboto', sans-serif;
 	  margin-top: 4px;
 	}
   
-  }
-  
   #nav:checked+.nav__open {
 	transform: rotate(45deg);
   }
@@ -307,4 +403,4 @@ $font-family_2: 'Roboto', sans-serif;
     .footer-clean .item.social > a {
       margin-top:10px;
     }
-  
+  }

@@ -469,7 +469,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	.card_title {
 	font-family: $font-family_1;
 	font-weight: bold;
-	color: $color_4;
+	color: $color_1;
 	line-height: 20px;
 	font-size: 25px;
 	text-align: justify;
@@ -502,7 +502,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	font-size: 14px;
 	opacity: 0;
 	transition: opacity .5s;
-	color: darkgrey;
+	color: $color_4;
 	}
 	
 
