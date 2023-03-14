@@ -1,8 +1,10 @@
 $color_1: rgb(0, 0, 0);
 $color_2: rgb(252, 248, 41);
 $color_3: rgba(238, 238, 238, 1.0);
+$color_4: rgb(56, 56, 56);
 $font-family_1: 'Stick No Bills', sans-serif;
 $font-family_2: 'Roboto', sans-serif;
+$font-family_3: 'Roboto Condensed', sans-serif;
 
   /*BARRA NAVEGACION*/
   .navbar {
@@ -71,6 +73,142 @@ $font-family_2: 'Roboto', sans-serif;
   .nav__items .nav__link:hover {
 	color: $color_2;
   }
+
+  /*MAIN CARROUSEL*/
+
+  .h1 {
+	font-family: $font-family_3;
+	color: $color_1;
+	font-size: 40px;
+	text-align: left;
+	margin-top: 2%;
+  }
+
+  .h1 {
+	-webkit-animation: h1 1s ease-in both;
+	        animation: h1 1s ease-in both;
+}
+
+@-webkit-keyframes h1 {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  @keyframes h1 {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  
+
+  .h2, .h3, .h4, .h5 {
+	font-family: $font-family_2;
+	color: $color_4;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 5%;
+  }
+
+
+  #slider { 
+	overflow: hidden; 
+}
+  #slider figure img { 
+	width: 20%; 
+	float: left; 
+}
+  
+  #slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite;
+}
+
+#slider1 { 
+	overflow: hidden; 
+}
+  #slider1 figure img { 
+	width: 20%; 
+	float: left; 
+}
+  
+  #slider1 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite;
+}
+
+#slider2 { 
+	overflow: hidden; 
+}
+  #slider2 figure img { 
+	width: 20%; 
+	float: left; 
+}
+  
+  #slider2 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite;
+}
+
+#slider3 { 
+	overflow: hidden; 
+}
+  #slider3 figure img { 
+	width: 20%; 
+	float: left; 
+}
+  
+  #slider3 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
 
   /*FOOTER*/
   
