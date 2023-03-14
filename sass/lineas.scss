@@ -83,11 +83,25 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 
   /*MAIN*/
 
-  .h1, h2, h3 {
+  .h1, .h2, .h3 {
 	font-family: $font-family_3;
 	font-size: 40px;
-	align-items:start;	
+	text-align:center;
+	color: $color_1;
+	animation: animacion 2s ease-in-out 0s 1 normal forwards;	
   }
+
+  @keyframes animacion {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 .main_card_contain {
 	display: grid;
@@ -99,6 +113,8 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	grid-row-gap: 50px;
 	grid-gap: .5rem;
 	margin: .5rem 0;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .h1 {
 	grid-area: h1;
@@ -469,7 +485,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	.card_title {
 	font-family: $font-family_1;
 	font-weight: bold;
-	color: $color_1;
+	color: $color_4;
 	line-height: 20px;
 	font-size: 25px;
 	text-align: justify;
@@ -480,7 +496,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding:10px;
+	padding: 14px;
 	background: #dddddd;
 	border-top-left-radius: 25px;
 	transform: translateY(130px);
@@ -488,7 +504,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	&::before {
 		content: '';
 	position: absolute;
-	top: -50px;
+	top: -60px;
 	right: -45px;
 	width: 100px;
 	height: 100px;
@@ -683,8 +699,6 @@ footer {
 	  margin-top: 4px;
 	}
   
-  }
-  
   #nav:checked+.nav__open {
 	transform: rotate(45deg);
   }
@@ -776,3 +790,4 @@ footer {
     .footer-clean .item.social > a {
       margin-top:10px;
     }
+}
