@@ -13,14 +13,14 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 	scroll-behavior: smooth;
   }
 
-/*BANNER PRINCIPAL*/
+/*BANNER PRINCIPAL
   .header {
 	background-color: $background-color_1;
 	display: flex;
 	justify-content: center;
 	max-width: 100%;
 	height: auto;
-  }
+  }*/
   
   /*BARRA NAVEGACION*/
   .navbar {
@@ -92,20 +92,175 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 
   /*CONTENIDO PRINCIPAL*/
 
+  .banner {
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	height: auto;
+	.img-fluid {
+	animation: myAnim1 1s ease 0s 1 normal forwards;
+	@keyframes myAnim1 {
+		0% {
+			opacity: 0;
+			transform: scale(0.6);
+		}
+	
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
+  }
+
   .h1_fabricantes {
 	font-size: 40px;
 	font-family: $font-family_3;
 	text-align: center;
 	color: $color_1;
+	margin-top: 5%;
+	animation: myAnim2 2s ease-in-out 0s 1 normal forwards;
+	@keyframes myAnim2 {
+		0% {
+			opacity: 0;
+			transform: translateX(-250px);
+		}
+	
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+  }
+	.img_inicio {
+		display: flex;
+		height: 80vh;
+		justify-content: center;
+		margin-top: 3%;
+		img {
+			box-shadow: -3px 5px 10px 1px #868686;
+		}
+	}
+  
+#article_fabricantes1 {
+	font-size: 30px;
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_4;
 	margin-top: 2%;
-	#img_inicio {
-		align-items: center;
-		height: 50vh;
-		width: 40vh;
+}
+
+#article_envios {
+	justify-content: center;
+	font-size: 25px;
+	font-family: $font-family_3;
+	text-align: center;
+	color: $color_3;
+	margin-top: 2%;
+	text-shadow: 0px 0px 8px $color_2;
+	background-color: $color_1;
+	animation: myAnim3 2s ease 0s infinite normal forwards;
+	@keyframes myAnim3 {
+		0% {
+			transform: scale(1);
+		}
+	
+		50% {
+			transform: scale(1.1);
+		}
+	
+		100% {
+			transform: scale(1);
+		}
+	}
+	  
+}
+
+  .h2_servicios {
+	font-size: 40px;
+	font-family: $font-family_3;
+	text-align: center;
+	color: $color_1;
+	margin-top: 2%;
+  }
+
+  #article_servicios1, #article_servicios2 {
+	font-size: 30px;
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_4;
+	margin-top: 2%;
+  }
+
+  #article_servicios3 {
+	font-size: 50px;
+	font-family: $font-family_3;
+	text-align: center;
+	color: $color_2;
+	margin-top: 2%;
+	text-shadow: 0px 0px 15px $color_1;
+	-webkit-animation: text-shadow-pop-left 2s infinite alternate ;
+	        animation: text-shadow-pop-left 2s infinite alternate ;
+			@-webkit-keyframes text-shadow-pop-left {
+				0% {
+				  text-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+				  -webkit-transform: translateX(0);
+						  transform: translateX(0);
+				}
+				100% {
+				  text-shadow: -1px 0 #000000, -2px 0 #000000, -3px 0 #000000, -4px 0 #000000, -5px 0 #000000, -6px 0 #000000, -7px 0 #000000, -8px 0 #000000;
+				  -webkit-transform: translateX(8px);
+						  transform: translateX(8px);
+				}
+			  }
+			  @keyframes text-shadow-pop-left {
+				0% {
+				  text-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+				  -webkit-transform: translateX(0);
+						  transform: translateX(0);
+				}
+				100% {
+				  text-shadow: -1px 0 #000000, -2px 0 #000000, -3px 0 #000000, -4px 0 #000000, -5px 0 #000000, -6px 0 #000000, -7px 0 #000000, -8px 0 #000000;
+				  -webkit-transform: translateX(8px);
+						  transform: translateX(8px);
+				}
+			  }
+			}			  
+
+
+  .img_puertas {
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	margin-top: 3%;
+	img {
+		box-shadow: -3px 5px 10px 1px #868686;
 	}
   }
 
+  .h3_ubicacion {
+	font-size: 40px;
+	font-family: $font-family_3;
+	text-align: center;
+	color: $color_1;
+	margin-top: 2%;
+  }
+  
+  #article_ubicacion1, #article_ubicacion2 {
+	font-size: 25px;
+	text-align: center;
+	color: $color_4;
+  }
+  
+  #article_ubicacion1 {
+	font-family: $font-family_3;
+	margin-top: 2%;
+  }
 
+  #article_ubicacion2 {
+	font-family: $font-family_2;
+  }
 
 
 
