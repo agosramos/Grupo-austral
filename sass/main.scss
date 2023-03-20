@@ -91,15 +91,33 @@ $background-color_3: rgba(238, 238, 238, 1.0);
   }
 
   /*CONTENIDO PRINCIPAL*/
-  
+
+  .h1_fabricantes {
+	font-size: 40px;
+	font-family: $font-family_3;
+	text-align: center;
+	color: $color_1;
+	margin-top: 2%;
+	#img_inicio {
+		align-items: center;
+		height: 50vh;
+		width: 40vh;
+	}
+  }
+
+
+
+
+
+  /*
   .fabricantes,
   .servicios,
-  .contactanos {
+  .ubicacion {
 	height: 100vh;
 	position: relative;
   }
   
-  .fabricantes h1, .servicios h1, .contactanos h1 {
+  .fabricantes h1, .servicios h2, .ubicacion h3 {
 	margin: 0;
 	position: relative;
 	top: 300%;
@@ -151,7 +169,7 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 	font-size: 15px;
 	}
 
-.servicios h1{
+.servicios h2{
 	color: $color_1;
 	height: 100vh;
 	position: absolute;
@@ -200,7 +218,7 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 	text-align: center;
 	font-family: $font-family_3;
 	font-size: 25px;
-}
+}/*
   /*FOOTER*/
   
   .footer-clean {
@@ -211,7 +229,7 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 	  padding: 50px;
 	  background-color: $background-color_1;
 	  color: $color_2;
-	  h3 {
+	  h4 {
 		  font-family: $font-family_2;
 		  margin-top: 0;
 		  margin-bottom: 12px;
@@ -243,8 +261,6 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 			  line-height: 50px;
 			  display: inline-block;
 			  text-align: center;
-			  border-radius: 60%;
-			  border: 1px solid #ccc;
 			  margin-left: 50px;
 			  margin-top: 80px;
 			  color: $color_3;
