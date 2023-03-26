@@ -434,105 +434,60 @@ footer div img {
   .nav__open i:nth-child(3) {
     margin-top: 4px;
   }
+  #nav:checked + .nav__open {
+    transform: rotate(45deg);
+  }
+  #nav:checked + .nav__open i {
+    background-color: rgb(238, 238, 238);
+    transition: transform 0.2s ease;
+  }
+  #nav:checked + .nav__open i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+  }
+  #nav:checked + .nav__open i:nth-child(2) {
+    opacity: 0;
+  }
+  #nav:checked ~ .nav__item a {
+    display: block;
+  }
+  #nav:checked + .nav__open i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+  }
+  #nav:checked ~ .nav {
+    z-index: 9990;
+    opacity: 1;
+  }
+  #nav:checked ~ .nav ul li a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /*contenido principal*/
+  .img_inicio, .img_puertas {
+    height: 40vh;
+  }
+  /*footer*/
+  .footer-clean .item.social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+  }
+  .footer-clean .item.social > a:hover {
+    opacity: 0.9;
+  }
+  .footer-clean .item.social > a {
+    margin-top: 10px;
+  }
 }
-#nav:checked + .nav__open {
-  transform: rotate(45deg);
-}
-
-#nav:checked + .nav__open i {
-  background-color: rgb(238, 238, 238);
-  transition: transform 0.2s ease;
-}
-
-#nav:checked + .nav__open i:nth-child(1) {
-  transform: translateY(6px) rotate(180deg);
-}
-
-#nav:checked + .nav__open i:nth-child(2) {
-  opacity: 0;
-}
-
-#nav:checked ~ .nav__item a {
-  display: block;
-}
-
-#nav:checked + .nav__open i:nth-child(3) {
-  transform: translateY(-6px) rotate(90deg);
-}
-
-#nav:checked ~ .nav {
-  z-index: 9990;
-  opacity: 1;
-}
-
-#nav:checked ~ .nav ul li a {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/*contenido principal*/
-.fabricantes h1 {
-  font-size: 20px;
-}
-
-#img_inicio {
-  display: none;
-}
-
-#article_fabricantes1 {
-  top: 60%;
-}
-
-#article_envios {
-  top: 90%;
-}
-
-.servicios h1 {
-  position: relative;
-  top: 110%;
-  font-size: 40px;
-}
-
-#article_servicios1 {
-  top: 16%;
-  font-size: 15px;
-}
-
-#article_servicios2 {
-  top: 25%;
-  font-size: 15px;
-}
-
-#article_servicios3 {
-  top: 35%;
-  font-size: 20px;
-}
-
-/*footer*/
-.footer-clean .item.social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin-left: 10px;
-  margin-top: 22px;
-  color: inherit;
-  opacity: 0.75;
-}
-
-.footer-clean .item.social > a:hover {
-  opacity: 0.9;
-}
-
-.footer-clean .item.social > a {
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 670px) {
   /*CONTENIDO PRINCIPAL*/
   .img_inicio, .img_puertas {
     height: 30vh;
@@ -543,6 +498,9 @@ footer div img {
   #article_envios {
     justify-content: center;
     font-size: 20px;
+  }
+  #article_servicios3 {
+    font-size: 25px;
   }
   .h1_fabricantes, .h2_servicios, .h3_ubicacion, #article_ubicacion3 {
     font-size: 22px;
