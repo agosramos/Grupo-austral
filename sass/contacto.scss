@@ -127,6 +127,7 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 			transition: transform 0.3s ease-in-out;
 		}
 	}
+
 	button[type="submit"] {
 		background-color: $color_2;
 		color: $color_1;
@@ -141,11 +142,6 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 			transition: transform 0.3s ease-in-out;
 		}
 	}
-}
-textarea {
-	resize: none;
-	height: 90px;
-	width: 510px;
 }
 
 .mapa {
@@ -171,11 +167,26 @@ textarea {
 		box-shadow: -2px 3px 6px 1px #000
 	}
 }
-
+.mapa_responsive{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+}
+}
 
       /*FOOTER*/
   
 	.footer-clean {
+		border: 0;
+		margin:0;
+		position: static;
 		padding: 50px;
 		background-color: $color_1;
 		color: $color_2;
@@ -379,6 +390,12 @@ textarea {
 	transform: translateY(0);
   }
 
+  .contact-form {
+	.heading {
+		font-size: 30px;
+	}
+}
+
   /*footer*/
 
   .footer-clean .item.social > a {
@@ -404,3 +421,5 @@ textarea {
       margin-top:10px;
     }
   }
+
+ 

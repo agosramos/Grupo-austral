@@ -133,12 +133,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-textarea {
-  resize: none;
-  height: 90px;
-  width: 510px;
-}
-
 .mapa {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 40px;
@@ -159,8 +153,25 @@ textarea {
   box-shadow: -2px 3px 6px 1px #000;
 }
 
+.mapa_responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.mapa_responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 /*FOOTER*/
 .footer-clean {
+  border: 0;
+  margin: 0;
+  position: static;
   padding: 50px;
   background-color: rgb(0, 0, 0);
   color: rgb(252, 248, 41);
@@ -330,6 +341,9 @@ footer div img {
   #nav:checked ~ .nav ul li a {
     opacity: 1;
     transform: translateY(0);
+  }
+  .contact-form .heading {
+    font-size: 30px;
   }
   /*footer*/
   .footer-clean .item.social > a {

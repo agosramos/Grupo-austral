@@ -521,13 +521,12 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	color: $color_4;
 	}
 	
-
-
-	
-
   /*FOOTER*/
   
   .footer-clean {
+	border: 0;
+	margin:0;
+	position: static;
     padding: 50px;
     background-color: $color_1;
     color: $color_2;
