@@ -466,7 +466,7 @@ footer div img {
     width: 150px;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 348px) {
   /*main*/
   div.noticia {
     width: 98%;
