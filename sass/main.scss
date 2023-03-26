@@ -262,6 +262,20 @@ $background-color_3: rgba(238, 238, 238, 1.0);
 	animation: animacion 1s ease 0s 1 normal forwards;
 }
 
+.mapa_responsive{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+}
+}
+
 @keyframes animacion {
 	0% {
 		opacity: 0;
@@ -310,7 +324,6 @@ $background-color_3: rgba(238, 238, 238, 1.0);
   .footer-clean {
 	  border: 0;
 	  margin:0;
-	  /*margin-top: 30%;*/
 	  position:static;
 	  padding: 50px;
 	  background-color: $background-color_1;
@@ -573,7 +586,4 @@ footer {
 	font-size: 18px;
 }
 
-.mapa {
-	display: none;
-}
   }
