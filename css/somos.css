@@ -411,5 +411,18 @@ footer div img {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 480px) {
+  /*main*/
+  div.noticia {
+    width: 95%;
+    height: 370px;
+  }
+  #somos, #fabrica, #colocaciones {
+    font-size: 24px;
+  }
+  #texto1, #texto2, #texto3 {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=somos.css.map */
