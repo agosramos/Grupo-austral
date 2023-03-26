@@ -473,21 +473,50 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 			}
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 450px) {
 		/*main*/
 	  
 		div.noticia {
-			width: 95%;
-			height: 370px;
+			width: 98%;
+			height: 460px;
 		 } 
 		  #somos, #fabrica, #colocaciones {
-			font-size: 24px;
+			font-size: 27px;
 		  }
 	
 		  #texto1, #texto2, #texto3 {
-			font-size: 14px;
+			font-size: 17px;
+		  }
+		  div.noticia img.izquierda {
+			width: 200px;
+		  }
+		  
+		  div.noticia img.derecha {
+			width: 200px;
 		  }
   }
+
+  @media screen and (max-width: 400px) {
+	/*main*/
+  
+	div.noticia {
+		height: 425px;
+	 } 
+	  #somos, #fabrica, #colocaciones {
+		font-size: 25px;
+	  }
+
+	  #texto1, #texto2, #texto3 {
+		font-size: 15px;
+	  }
+	  div.noticia img.izquierda {
+		width: 180px;
+	  }
+	  
+	  div.noticia img.derecha {
+		width: 180px;
+	  }
+	}
 
   @media screen and (max-width: 340px) {
 	/*main*/
