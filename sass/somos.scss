@@ -518,6 +518,28 @@ $font-family_3: 'Roboto Condensed', sans-serif;
 	  }
 	}
 
+	@media screen and (max-width: 368px) {
+		/*main*/
+	  
+		div.noticia {
+			height: 440px;
+		 } 
+		  #somos, #fabrica, #colocaciones {
+			font-size: 22px;
+		  }
+	
+		  #texto1, #texto2, #texto3 {
+			font-size: 15px;
+		  }
+		  div.noticia img.izquierda {
+			width: 150px;
+		  }
+		  
+		  div.noticia img.derecha {
+			width: 150px;
+		  }
+		}
+
   @media screen and (max-width: 340px) {
 	/*main*/
   
